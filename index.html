@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather forecast</title>
+  </head>
+  <body>
+    <p class="letter">
+      My dear friend and travel-mate Beatriz, <br />
+      you could always check-in with your weather right here! <br />
+      -from your Seoul-mate!
+    </p>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            class="search-form-input"
+            id="search-form-input"
+            required
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 id="city">Your City</h1>
+            <p>
+              <span id="time">Thursday 18:20</span>
+              <span id="weather-description">foggy</span>
+              <br />Humidity: <strong id="humidity">80%</strong>, Wind:
+              <strong id="wind-speed">3km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-emoji" id="weather-emoji"></div>
+            <div class="weather-app-temperature" id="temperature">20</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+        <div class="weather-forecast">
+          <div class="weather-forecast-date">
+            <div class="weather-forecast-day">Thurs</div>
+            <div class="weather-forecast-icon">
+              <img
+                src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+              />
+            </div>
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">18º </span>
+              <span class="weather-forecast-temperature-min"> 12º</span>
+            </div>
+          </div>
+          <div class="weather-forecast-date">
+            <div class="weather-forecast-day">Thurs</div>
+            <div class="weather-forecast-icon">
+              <img
+                src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+              />
+            </div>
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">18º </span>
+              <span class="weather-forecast-temperature-min"> 12º</span>
+            </div>
+          </div>
+          <div class="weather-forecast-date">
+            <div class="weather-forecast-day">Thurs</div>
+            <div class="weather-forecast-icon">
+              <img
+                src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+              />
+            </div>
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">18º </span>
+              <span class="weather-forecast-temperature-min"> 12º</span>
+            </div>
+          </div>
+          <div class="weather-forecast-date">
+            <div class="weather-forecast-day">Thurs</div>
+            <div class="weather-forecast-icon">
+              <img
+                src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+              />
+            </div>
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">18º </span>
+              <span class="weather-forecast-temperature-min"> 12º</span>
+            </div>
+          </div>
+          <div class="weather-forecast-date">
+            <div class="weather-forecast-day">Thurs</div>
+            <div class="weather-forecast-icon">
+              <img
+                src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+              />
+            </div>
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">18º </span>
+              <span class="weather-forecast-temperature-min"> 12º</span>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        Coded by <a href="https://github.com/zora-git">HJ Park</a>, code hosted
+        on
+        <a href="https://github.com/zora-git/weather-project-for-bea">GitHub</a>
+        and website hosted on
+        <a href="https://weather-for-bea.netlify.app/">Netlify</a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
