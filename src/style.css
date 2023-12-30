@@ -123,6 +123,12 @@ hr {
   font-weight: 500;
 }
 
+.weather-forecast-icon {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
 .weather-forecast-temperature {
   font-size: 15px;
   color: #c86b85;
